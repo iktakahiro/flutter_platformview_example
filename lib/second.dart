@@ -3,7 +3,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-typedef void SecondWidgetCreatedCallback(SecondWidgetController controller);
+typedef SecondWidgetCreatedCallback = void Function(
+    SecondWidgetController controller);
 
 class SecondWidget extends StatefulWidget {
   const SecondWidget({
