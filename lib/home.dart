@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './first.dart';
+import './second.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key key}) : super(key: key);
@@ -20,7 +21,12 @@ class HomeScreen extends StatelessWidget {
               child: FirstWidget(),
             ),
           ),
-          Text('second'),
+          Card(
+            child: SizedBox(
+              height: 200,
+              child: SecondWidget(),
+            ),
+          ),
         ],
       ),
     );
