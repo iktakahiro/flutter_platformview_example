@@ -10,5 +10,6 @@ class MainActivity: FlutterActivity() {
     GeneratedPluginRegistrant.registerWith(this)
 
     FirstWidgetPlugin.registerWith(this.registrarFor("com.example.flutter_platformview_example.FirstWidgetPlugin"))
+    SecondWidgetPlugin.registerWith(this.registrarFor("com.example.flutter_platformview_example.SecondWidgetPlugin"))
   }
 }
