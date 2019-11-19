@@ -6,6 +6,6 @@ object SecondWidgetPlugin {
         registrar
                 .platformViewRegistry()
                 .registerViewFactory(
-                        "plugins/second_widget", FirstWidgetFactory(registrar.messenger()))
+                        "plugins/second_widget", SecondWidgetFactory(registrar.messenger()))
     }
 }

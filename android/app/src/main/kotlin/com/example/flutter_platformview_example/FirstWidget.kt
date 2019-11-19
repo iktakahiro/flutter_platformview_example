@@ -19,8 +19,8 @@ class FirstWidget internal constructor(context: Context, id: Int, messenger: Bin
     }
 
     init {
-        view = LayoutInflater.from(context).inflate(R.layout.second_widget, null)
-        methodChannel = MethodChannel(messenger, "plugins/second_widget_$id")
+        view = LayoutInflater.from(context).inflate(R.layout.first_widget, null)
+        methodChannel = MethodChannel(messenger, "plugins/first_widget_$id")
         methodChannel.setMethodCallHandler(this)
     }
 
